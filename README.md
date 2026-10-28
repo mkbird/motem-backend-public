@@ -20,9 +20,10 @@
   最小权限、限流/配额、运行时隔离，以及对日志中的令牌和用户数据脱敏。
   游戏/小组件生成会运行代码生成工具，应放在独立受限环境，避免与生产
   凭据或其他用户数据共享文件系统权限。
-- Python 包 `aichat` 来自独立的 `AIChatServer` 项目，不是 iOS SDK。
-  该依赖未包含在本仓库中，原依赖仓库仍为私有；安装需要获得对应访问
-  权限或自行提供兼容实现。不要用来源不明的同名包替代它。
+- Python 包 `aichat` 来自独立的公开项目
+  [AIChatServer](https://github.com/mkbird/AIChatServer)，不是 iOS SDK。
+  `requirements.txt` 通过 HTTPS 引用固定提交，无需私有仓库权限。
+  不要用来源不明的同名包替代它。
 - 本次发布未自行添加或变更许可证。
 
 ## 环境搭建
@@ -49,7 +50,7 @@ pip install -r requirements.txt
 pip install -e ".[dev]"
 ```
 
-> **注意**：先确保具有独立 `AIChatServer`/`aichat` 依赖的访问权限；此公开仓库目前不是无需额外依赖即可独立运行的完整发行版。
+> **注意**：请使用 `requirements.txt` 安装固定提交的公开 `AIChatServer`/`aichat` 依赖；运行服务仍需自行配置数据库、Redis 和所用模型服务的凭据。
 
 ### 3. 安装并配置 MySQL
 

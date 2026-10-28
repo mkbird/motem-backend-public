@@ -1,4 +1,4 @@
--e git+ssh://git@github.com/mkbird/AIChatServer.git@c727306dda20b73b4ab818c40ed5abda52f4f80d#egg=aichat
+-e git+https://github.com/mkbird/AIChatServer.git@c727306dda20b73b4ab818c40ed5abda52f4f80d#egg=aichat
 aioapns==3.3.1
 aiohappyeyeballs==2.6.1
 aiohttp==3.13.3
