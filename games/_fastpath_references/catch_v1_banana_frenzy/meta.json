@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.1",
+  "archetype_id": "catch_v1",
+  "provenance": "fastpath",
+  "created_at": 1778596816,
+  "title": "Banana Frenzy",
+  "title_i18n": {
+    "en": "Banana Frenzy",
+    "zh-Hans": "香蕉狂热"
+  },
+  "description": "A jungle monkey catches falling bananas while dodging coconuts.",
+  "description_i18n": {
+    "en": "A jungle monkey catches falling bananas while dodging coconuts.",
+    "zh-Hans": "丛林里的猴子接住落下的香蕉，躲开椰子。"
+  },
+  "icon": "🐵",
+  "recipe": {
+    "schema_version": "0.1",
+    "archetype_id": "catch_v1",
+    "confidence": 1.0,
+    "meta": {
+      "title_i18n": {
+        "en": "Banana Frenzy",
+        "zh-Hans": "香蕉狂热"
+      },
+      "description_i18n": {
+        "en": "A jungle monkey catches falling bananas while dodging coconuts.",
+        "zh-Hans": "丛林里的猴子接住落下的香蕉，躲开椰子。"
+      },
+      "icon": "🐵"
+    },
+    "theme": {
+      "palette": "warm",
+      "background_hint": "forest"
+    },
+    "entities": {
+      "player": {
+        "sprite_hint": "monkey",
+        "score_value": 1,
+        "lives_cost": 1,
+        "control": "face_x"
+      },
+      "drop": {
+        "sprite_hint": "banana",
+        "score_value": 1,
+        "lives_cost": 1,
+        "control": "face_x"
+      },
+      "obstacle": {
+        "sprite_hint": "rock",
+        "score_value": 1,
+        "lives_cost": 1,
+        "control": "face_x"
+      }
+    },
+    "params": {
+      "spawn_rate_per_sec": 1.8,
+      "fall_speed_min": 200.0,
+      "fall_speed_max": 420.0,
+      "obstacle_probability": 0.22,
+      "win_score": 30,
+      "max_lives": 4,
+      "catcher_radius": 46.0
+    },
+    "audio": {
+      "bgm": "bgm_playful",
+      "sfx_pickup": "pickup",
+      "sfx_hit": "hit",
+      "sfx_gameover": "level_fail"
+    }
+  }
+}

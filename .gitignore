@@ -1,0 +1,73 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+nohup.out
+
+# Fast Path observability traces (runtime data, contains user prompts)
+logs/
+
+# Runtime-uploaded profile avatars
+static/avatars/
+
+# AI games：游戏源码（scripts/scenes/assets/audio/meta.json）已纳入 git。
+# 下列产物 / SDK 会话日志 / 编辑器缓存不入库（原先整目录 ai_*/mac_* 都 ignore，
+# 现改为只 ignore 非源码部分）。
+games/ai_*.zip
+games/ai_*.zip.legacy.bak
+games/mac_*.zip
+games/.template-bundle.tar.gz
+games/.template-bundle.etag
+# Godot 编辑器缓存（任意层级的 .godot/，含游戏目录内，--import 可重建）
+.godot/
+
+# Runtime-generated AI widgets (保留 _template 和 aw_<具名> 的 alembic seed
+# 比如 aw_nixie_clock；用户/测试创建的 aw_<时间戳>_<hash> 是 runtime 产物)
+widgets/aw_[0-9]*/
+widgets/aw_[0-9]*.zip
+widgets/aw_[0-9]*.zip.legacy.bak
+
+.omc
+.claude
+*.claude/
+*.jsonl
+*.sqlite
+*.sqlite3
+*.db
+*.p12
+*.pem
+*.key
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Generated/user-owned content is never part of the public source snapshot.
+games/ai_*/
+games/mac_*/
+games/editor_*/
+widgets/aw_*/
+
+# APNs token-based auth：.p8 私钥 + secrets/ 整个目录都不入库
+secrets/
+*.p8
+
+# Godot Web export bundles (generated)
+web_builds/

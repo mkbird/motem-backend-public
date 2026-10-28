@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.1",
+  "archetype_id": "catch_v1",
+  "provenance": "fastpath",
+  "created_at": 1778596816,
+  "title": "Stardust Catcher",
+  "title_i18n": {
+    "en": "Stardust Catcher",
+    "zh-Hans": "拾星者"
+  },
+  "description": "Glide through space and collect stardust before meteors hit.",
+  "description_i18n": {
+    "en": "Glide through space and collect stardust before meteors hit.",
+    "zh-Hans": "在太空中漂浮，在陨石击中前收集星尘。"
+  },
+  "icon": "✨",
+  "recipe": {
+    "schema_version": "0.1",
+    "archetype_id": "catch_v1",
+    "confidence": 1.0,
+    "meta": {
+      "title_i18n": {
+        "en": "Stardust Catcher",
+        "zh-Hans": "拾星者"
+      },
+      "description_i18n": {
+        "en": "Glide through space and collect stardust before meteors hit.",
+        "zh-Hans": "在太空中漂浮，在陨石击中前收集星尘。"
+      },
+      "icon": "✨"
+    },
+    "theme": {
+      "palette": "neon",
+      "background_hint": "space"
+    },
+    "entities": {
+      "player": {
+        "sprite_hint": "astronaut",
+        "score_value": 1,
+        "lives_cost": 1,
+        "control": "face_x"
+      },
+      "drop": {
+        "sprite_hint": "star",
+        "score_value": 1,
+        "lives_cost": 1,
+        "control": "face_x"
+      },
+      "obstacle": {
+        "sprite_hint": "lightning",
+        "score_value": 1,
+        "lives_cost": 1,
+        "control": "face_x"
+      }
+    },
+    "params": {
+      "spawn_rate_per_sec": 2.4,
+      "fall_speed_min": 260.0,
+      "fall_speed_max": 520.0,
+      "obstacle_probability": 0.3,
+      "win_score": 40,
+      "max_lives": 3,
+      "catcher_radius": 42.0
+    },
+    "audio": {
+      "bgm": "bgm_action",
+      "sfx_pickup": "pickup",
+      "sfx_hit": "hit",
+      "sfx_gameover": "level_fail"
+    }
+  }
+}

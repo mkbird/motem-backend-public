@@ -1,0 +1,559 @@
+{
+  "version": 1,
+  "description": "Curated CC0 sound effect library for AI-generated Godot games. AI references sounds by `id`; backend post-process copies referenced .ogg files into each game's audio/ directory at generation time. Files come from Kenney.nl audio packs (all CC0). See LICENSES.md.",
+  "sounds": [
+    {
+      "id": "click",
+      "file": "ui/click.ogg",
+      "category": "ui",
+      "description": "Generic UI button click",
+      "loop": false
+    },
+    {
+      "id": "back",
+      "file": "ui/back.ogg",
+      "category": "ui",
+      "description": "Back / cancel button",
+      "loop": false
+    },
+    {
+      "id": "confirm",
+      "file": "ui/confirm.ogg",
+      "category": "ui",
+      "description": "Confirm / OK button",
+      "loop": false
+    },
+    {
+      "id": "error",
+      "file": "ui/error.ogg",
+      "category": "ui",
+      "description": "UI error / invalid action buzz",
+      "loop": false
+    },
+    {
+      "id": "hover",
+      "file": "ui/hover.ogg",
+      "category": "ui",
+      "description": "Hover / focus tick",
+      "loop": false
+    },
+    {
+      "id": "select",
+      "file": "ui/select.ogg",
+      "category": "ui",
+      "description": "Menu item selected",
+      "loop": false
+    },
+    {
+      "id": "tap_low",
+      "file": "ui/tap_low.ogg",
+      "category": "ui",
+      "description": "Soft low-pitched tap",
+      "loop": false
+    },
+    {
+      "id": "tap_high",
+      "file": "ui/tap_high.ogg",
+      "category": "ui",
+      "description": "Soft high-pitched tap",
+      "loop": false
+    },
+    {
+      "id": "cancel",
+      "file": "ui/cancel.ogg",
+      "category": "ui",
+      "description": "Decline / cancel beep",
+      "loop": false
+    },
+    {
+      "id": "disabled",
+      "file": "ui/disabled.ogg",
+      "category": "ui",
+      "description": "Disabled / locked feedback",
+      "loop": false
+    },
+    {
+      "id": "score_up",
+      "file": "event/score_up.ogg",
+      "category": "event",
+      "description": "Score increment / coin pickup",
+      "loop": false
+    },
+    {
+      "id": "score_high",
+      "file": "event/score_high.ogg",
+      "category": "event",
+      "description": "High score / streak fanfare",
+      "loop": false
+    },
+    {
+      "id": "score_combo",
+      "file": "event/score_combo.ogg",
+      "category": "event",
+      "description": "Combo multiplier hit",
+      "loop": false
+    },
+    {
+      "id": "level_complete",
+      "file": "event/level_complete.ogg",
+      "category": "event",
+      "description": "Level / wave cleared fanfare",
+      "loop": false
+    },
+    {
+      "id": "level_fail",
+      "file": "event/level_fail.ogg",
+      "category": "event",
+      "description": "Game over / level failed sting",
+      "loop": false
+    },
+    {
+      "id": "life_lost",
+      "file": "event/life_lost.ogg",
+      "category": "event",
+      "description": "Player took damage / lost a life",
+      "loop": false
+    },
+    {
+      "id": "life_gained",
+      "file": "event/life_gained.ogg",
+      "category": "event",
+      "description": "Extra life / health restored",
+      "loop": false
+    },
+    {
+      "id": "powerup",
+      "file": "event/powerup.ogg",
+      "category": "event",
+      "description": "Power-up activated",
+      "loop": false
+    },
+    {
+      "id": "countdown_tick",
+      "file": "event/countdown_tick.ogg",
+      "category": "event",
+      "description": "Timer countdown tick",
+      "loop": false
+    },
+    {
+      "id": "pause",
+      "file": "event/pause.ogg",
+      "category": "event",
+      "description": "Game paused",
+      "loop": false
+    },
+    {
+      "id": "resume",
+      "file": "event/resume.ogg",
+      "category": "event",
+      "description": "Game resumed",
+      "loop": false
+    },
+    {
+      "id": "unlock",
+      "file": "event/unlock.ogg",
+      "category": "event",
+      "description": "Achievement / item unlocked",
+      "loop": false
+    },
+    {
+      "id": "save",
+      "file": "event/save.ogg",
+      "category": "event",
+      "description": "Progress saved chime",
+      "loop": false
+    },
+    {
+      "id": "load",
+      "file": "event/load.ogg",
+      "category": "event",
+      "description": "Loading / transition swoosh",
+      "loop": false
+    },
+    {
+      "id": "wave_start",
+      "file": "event/wave_start.ogg",
+      "category": "event",
+      "description": "New wave / round begins",
+      "loop": false
+    },
+    {
+      "id": "boss_appear",
+      "file": "event/boss_appear.ogg",
+      "category": "event",
+      "description": "Boss / mini-boss arrival sting",
+      "loop": false
+    },
+    {
+      "id": "jump",
+      "file": "action/jump.ogg",
+      "category": "action",
+      "description": "Character jump",
+      "loop": false
+    },
+    {
+      "id": "double_jump",
+      "file": "action/double_jump.ogg",
+      "category": "action",
+      "description": "Mid-air second jump",
+      "loop": false
+    },
+    {
+      "id": "hit",
+      "file": "action/hit.ogg",
+      "category": "action",
+      "description": "Generic hit / impact",
+      "loop": false
+    },
+    {
+      "id": "hit_metal",
+      "file": "action/hit_metal.ogg",
+      "category": "action",
+      "description": "Metallic clang impact",
+      "loop": false
+    },
+    {
+      "id": "shoot",
+      "file": "action/shoot.ogg",
+      "category": "action",
+      "description": "Generic projectile shot",
+      "loop": false
+    },
+    {
+      "id": "shoot_laser",
+      "file": "action/shoot_laser.ogg",
+      "category": "action",
+      "description": "Sci-fi laser shot",
+      "loop": false
+    },
+    {
+      "id": "dash",
+      "file": "action/dash.ogg",
+      "category": "action",
+      "description": "Quick dash / dodge",
+      "loop": false
+    },
+    {
+      "id": "pickup",
+      "file": "action/pickup.ogg",
+      "category": "action",
+      "description": "Generic item pickup",
+      "loop": false
+    },
+    {
+      "id": "pickup_coin",
+      "file": "action/pickup_coin.ogg",
+      "category": "action",
+      "description": "Coin pickup",
+      "loop": false
+    },
+    {
+      "id": "pickup_gem",
+      "file": "action/pickup_gem.ogg",
+      "category": "action",
+      "description": "Gem / treasure pickup",
+      "loop": false
+    },
+    {
+      "id": "pickup_health",
+      "file": "action/pickup_health.ogg",
+      "category": "action",
+      "description": "Health pack pickup",
+      "loop": false
+    },
+    {
+      "id": "explode",
+      "file": "action/explode.ogg",
+      "category": "action",
+      "description": "Large explosion",
+      "loop": false
+    },
+    {
+      "id": "explode_small",
+      "file": "action/explode_small.ogg",
+      "category": "action",
+      "description": "Small pop / spark explosion",
+      "loop": false
+    },
+    {
+      "id": "collide",
+      "file": "action/collide.ogg",
+      "category": "action",
+      "description": "Object collision thud",
+      "loop": false
+    },
+    {
+      "id": "land",
+      "file": "action/land.ogg",
+      "category": "action",
+      "description": "Character lands on ground",
+      "loop": false
+    },
+    {
+      "id": "charge",
+      "file": "action/charge.ogg",
+      "category": "action",
+      "description": "Power up / charging weapon",
+      "loop": false
+    },
+    {
+      "id": "shield",
+      "file": "action/shield.ogg",
+      "category": "action",
+      "description": "Shield activated / hit",
+      "loop": false
+    },
+    {
+      "id": "dash_recover",
+      "file": "action/dash_recover.ogg",
+      "category": "action",
+      "description": "Dash cooldown ready chime",
+      "loop": false
+    },
+    {
+      "id": "beep_short",
+      "file": "robot/beep_short.ogg",
+      "category": "robot",
+      "description": "Short robotic beep",
+      "loop": false
+    },
+    {
+      "id": "beep_long",
+      "file": "robot/beep_long.ogg",
+      "category": "robot",
+      "description": "Sustained robotic beep",
+      "loop": false
+    },
+    {
+      "id": "chirp",
+      "file": "robot/chirp.ogg",
+      "category": "robot",
+      "description": "Friendly robot chirp",
+      "loop": false
+    },
+    {
+      "id": "error_buzz",
+      "file": "robot/error_buzz.ogg",
+      "category": "robot",
+      "description": "Robotic error buzz",
+      "loop": false
+    },
+    {
+      "id": "startup",
+      "file": "robot/startup.ogg",
+      "category": "robot",
+      "description": "System startup chime",
+      "loop": false
+    },
+    {
+      "id": "shutdown",
+      "file": "robot/shutdown.ogg",
+      "category": "robot",
+      "description": "System power-down sweep",
+      "loop": false
+    },
+    {
+      "id": "scan",
+      "file": "robot/scan.ogg",
+      "category": "robot",
+      "description": "Scanner / radar sweep",
+      "loop": false
+    },
+    {
+      "id": "unlock_robot",
+      "file": "robot/unlock_robot.ogg",
+      "category": "robot",
+      "description": "Mechanical lock release",
+      "loop": false
+    },
+    {
+      "id": "glitch",
+      "file": "robot/glitch.ogg",
+      "category": "robot",
+      "description": "Digital glitch / static",
+      "loop": false
+    },
+    {
+      "id": "radar",
+      "file": "robot/radar.ogg",
+      "category": "robot",
+      "description": "Radar ping",
+      "loop": false
+    },
+    {
+      "id": "bgm_8bit",
+      "file": "bgm/bgm_8bit.ogg",
+      "category": "bgm",
+      "description": "Retro 8-bit chiptune loop",
+      "loop": true
+    },
+    {
+      "id": "bgm_8bit_bright",
+      "file": "bgm/bgm_8bit_bright.ogg",
+      "category": "bgm",
+      "description": "Bright cheerful 8-bit tune",
+      "loop": true
+    },
+    {
+      "id": "bgm_8bit_chill",
+      "file": "bgm/bgm_8bit_chill.ogg",
+      "category": "bgm",
+      "description": "Chill mellow 8-bit",
+      "loop": true
+    },
+    {
+      "id": "bgm_8bit_boss",
+      "file": "bgm/bgm_8bit_boss.ogg",
+      "category": "bgm",
+      "description": "Tense 8-bit boss / final stage",
+      "loop": true
+    },
+    {
+      "id": "bgm_8bit_victory",
+      "file": "bgm/bgm_8bit_victory.ogg",
+      "category": "bgm",
+      "description": "Triumphant 8-bit victory loop",
+      "loop": true
+    },
+    {
+      "id": "bgm_action",
+      "file": "bgm/bgm_action.ogg",
+      "category": "bgm",
+      "description": "Up-tempo action loop",
+      "loop": true
+    },
+    {
+      "id": "bgm_chase",
+      "file": "bgm/bgm_chase.ogg",
+      "category": "bgm",
+      "description": "Tense chase / bullet-hell",
+      "loop": true
+    },
+    {
+      "id": "bgm_battle",
+      "file": "bgm/bgm_battle.ogg",
+      "category": "bgm",
+      "description": "Heavy battle theme",
+      "loop": true
+    },
+    {
+      "id": "bgm_victory_loop",
+      "file": "bgm/bgm_victory_loop.ogg",
+      "category": "bgm",
+      "description": "Victory celebration",
+      "loop": true
+    },
+    {
+      "id": "bgm_dramatic",
+      "file": "bgm/bgm_dramatic.ogg",
+      "category": "bgm",
+      "description": "Dramatic / cinematic",
+      "loop": true
+    },
+    {
+      "id": "bgm_calm",
+      "file": "bgm/bgm_calm.ogg",
+      "category": "bgm",
+      "description": "Calm casual ambient",
+      "loop": true
+    },
+    {
+      "id": "bgm_playful",
+      "file": "bgm/bgm_playful.ogg",
+      "category": "bgm",
+      "description": "Playful cartoon tune",
+      "loop": true
+    },
+    {
+      "id": "bgm_garden",
+      "file": "bgm/bgm_garden.ogg",
+      "category": "bgm",
+      "description": "Light pastoral / garden vibe",
+      "loop": true
+    },
+    {
+      "id": "bgm_skip",
+      "file": "bgm/bgm_skip.ogg",
+      "category": "bgm",
+      "description": "Skipping / hopping tune",
+      "loop": true
+    },
+    {
+      "id": "bgm_quirky",
+      "file": "bgm/bgm_quirky.ogg",
+      "category": "bgm",
+      "description": "Quirky comedic loop",
+      "loop": true
+    },
+    {
+      "id": "bgm_menu",
+      "file": "bgm/bgm_menu.ogg",
+      "category": "bgm",
+      "description": "Menu / title screen",
+      "loop": true
+    },
+    {
+      "id": "bgm_lounge",
+      "file": "bgm/bgm_lounge.ogg",
+      "category": "bgm",
+      "description": "Lounge jazz background",
+      "loop": true
+    },
+    {
+      "id": "bgm_swing",
+      "file": "bgm/bgm_swing.ogg",
+      "category": "bgm",
+      "description": "Swing jazz upbeat",
+      "loop": true
+    },
+    {
+      "id": "bgm_cool",
+      "file": "bgm/bgm_cool.ogg",
+      "category": "bgm",
+      "description": "Cool laid-back jazz",
+      "loop": true
+    },
+    {
+      "id": "bgm_jazz_quiet",
+      "file": "bgm/bgm_jazz_quiet.ogg",
+      "category": "bgm",
+      "description": "Quiet contemplative jazz",
+      "loop": true
+    },
+    {
+      "id": "bgm_atmosphere",
+      "file": "bgm/bgm_atmosphere.ogg",
+      "category": "bgm",
+      "description": "Atmospheric exploration",
+      "loop": true
+    },
+    {
+      "id": "bgm_mystery",
+      "file": "bgm/bgm_mystery.ogg",
+      "category": "bgm",
+      "description": "Mysterious / puzzle",
+      "loop": true
+    },
+    {
+      "id": "bgm_island",
+      "file": "bgm/bgm_island.ogg",
+      "category": "bgm",
+      "description": "Tropical island vibes",
+      "loop": true
+    },
+    {
+      "id": "bgm_dreamy",
+      "file": "bgm/bgm_dreamy.ogg",
+      "category": "bgm",
+      "description": "Dreamy floating ambient",
+      "loop": true
+    },
+    {
+      "id": "bgm_meditation",
+      "file": "bgm/bgm_meditation.ogg",
+      "category": "bgm",
+      "description": "Meditation / zen-like",
+      "loop": true
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; but it can also be edited with a text editor.
+
+[application]
+
+config/name="AI Game"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.4")
+
+[display]
+
+window/size/viewport_width=1194
+window/size/viewport_height=834
+window/handheld/orientation=1
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[input]
+
+ui_accept={
+"deadzone": 0.5,
+"events": []
+}
+
+[gui]
+
+theme/custom="res://fonts/default_theme.tres"
+
+[rendering]
+
+renderer/rendering_method="mobile"
+
+[autoload]
+
+InputBridge="*res://scripts/input_bridge.gd"
+GameManager="*res://scripts/game_manager.gd"
+I18n="*res://scripts/i18n.gd"
+AudioManager="*res://scripts/audio_manager.gd"

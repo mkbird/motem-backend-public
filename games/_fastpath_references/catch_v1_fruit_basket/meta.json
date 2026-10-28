@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.1",
+  "archetype_id": "catch_v1",
+  "provenance": "fastpath",
+  "created_at": 1778596816,
+  "title": "Fruit Basket",
+  "title_i18n": {
+    "en": "Fruit Basket",
+    "zh-Hans": "水果篮子"
+  },
+  "description": "Help the chef catch fresh fruits dropping from the orchard.",
+  "description_i18n": {
+    "en": "Help the chef catch fresh fruits dropping from the orchard.",
+    "zh-Hans": "帮厨师接住果园里掉下来的新鲜水果。"
+  },
+  "icon": "🍎",
+  "recipe": {
+    "schema_version": "0.1",
+    "archetype_id": "catch_v1",
+    "confidence": 1.0,
+    "meta": {
+      "title_i18n": {
+        "en": "Fruit Basket",
+        "zh-Hans": "水果篮子"
+      },
+      "description_i18n": {
+        "en": "Help the chef catch fresh fruits dropping from the orchard.",
+        "zh-Hans": "帮厨师接住果园里掉下来的新鲜水果。"
+      },
+      "icon": "🍎"
+    },
+    "theme": {
+      "palette": "pastel",
+      "background_hint": "beach"
+    },
+    "entities": {
+      "player": {
+        "sprite_hint": "chef",
+        "score_value": 1,
+        "lives_cost": 1,
+        "control": "face_x"
+      },
+      "drop": {
+        "sprite_hint": "apple",
+        "score_value": 1,
+        "lives_cost": 1,
+        "control": "face_x"
+      },
+      "obstacle": {
+        "sprite_hint": "spike",
+        "score_value": 1,
+        "lives_cost": 1,
+        "control": "face_x"
+      }
+    },
+    "params": {
+      "spawn_rate_per_sec": 1.4,
+      "fall_speed_min": 180.0,
+      "fall_speed_max": 340.0,
+      "obstacle_probability": 0.18,
+      "win_score": 20,
+      "max_lives": 5,
+      "catcher_radius": 50.0
+    },
+    "audio": {
+      "bgm": "bgm_calm",
+      "sfx_pickup": "pickup",
+      "sfx_hit": "hit",
+      "sfx_gameover": "level_fail"
+    }
+  }
+}

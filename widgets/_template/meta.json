@@ -1,0 +1,14 @@
+{
+  "title": "Clock",
+  "title_i18n": { "en": "Clock", "zh-Hans": "时钟" },
+  "description": "Minimal clock widget template. Replace this with your own widget.",
+  "description_i18n": {
+    "en": "Minimal clock widget template. Replace this with your own widget.",
+    "zh-Hans": "极简时钟模板，AI 在此基础上生成新组件。"
+  },
+  "icon": "🕒",
+  "supported_sizes": ["small", "medium", "large"],
+  "required_data": ["time"],
+  "required_permissions": [],
+  "history": []
+}

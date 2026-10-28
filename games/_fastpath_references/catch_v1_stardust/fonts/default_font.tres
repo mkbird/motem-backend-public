@@ -1,0 +1,6 @@
+[gd_resource type="SystemFont" format=3]
+
+[resource]
+font_names = PackedStringArray("PingFang SC", "Heiti SC", "Apple SD Gothic Neo", "Hiragino Sans", "Noto Sans CJK SC", "sans-serif")
+antialiased = true
+generate_mipmaps = true
